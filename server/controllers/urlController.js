@@ -2,7 +2,6 @@ const shortid = require("shortid");
 const URL = require("../models/url");
 
 async function reduceUrl(req, res) {
-  console.log(req.body);
   const { urldata } = req.body;
   if (!urldata) {
     res.status(400).json({ error: "url is required" });

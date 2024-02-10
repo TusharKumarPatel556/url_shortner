@@ -9,6 +9,5 @@ export const changeUrl = async (urldata) => {
       "Content-Type": "application/json",
     },
   });
-
-  console.log("res", response);
+  return response.data.id;
 };
