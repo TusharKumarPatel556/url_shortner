@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import UrlBox from "./Components/InputBox/UrlBox";
 import UrlContext from "./context/UrlContext";
+import QrCodeGenerator from "./Components/QrCode/QrCodeGenerator";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <UrlContext>
           <UrlBox />
         </UrlContext>
+        <QrCodeGenerator />
       </div>
     </main>
   );
