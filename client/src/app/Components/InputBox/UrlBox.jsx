@@ -33,17 +33,17 @@ const UrlBox = () => {
 
   return (
     <>
-      <h1 id="shortUrl" style={{ color: " white", marginBottom: "50px" }}>
+      <h5 id="shortUrl" style={{ color: " white", marginBottom: "50px" }}>
         {shortUrl ? (
           <>
             <MdContentCopy onClick={handleCopy} />
-            &nbsp; http://localhost:3000/url/
+            &nbsp;https://urlshortner-hm79.onrender.com/url/
             {shortUrl}
           </>
         ) : (
           ""
         )}
-      </h1>
+      </h5>
 
       <input
         style={{ borderRadius: "1000px", width: "700px", height: "50px" }}
