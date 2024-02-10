@@ -14,8 +14,10 @@ const UrlBox = () => {
   }, []);
 
   const handleClick = async () => {
-    const shortUrl = await changeUrl(inputval);
-    setshortUrl(shortUrl);
+    if (inputval) {
+      const shortUrl = await changeUrl(inputval);
+      setshortUrl(shortUrl);
+    }
   };
 
   const handleChange = (e) => {
@@ -42,6 +44,7 @@ const UrlBox = () => {
           ""
         )}
       </h1>
+
       <input
         style={{ borderRadius: "1000px", width: "700px", height: "50px" }}
         type="text"
